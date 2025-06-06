@@ -1,3 +1,5 @@
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
 import './styles/global.css';
 import './styles/theme.css';
 
@@ -10,13 +12,17 @@ function App() {
 
     return (
         <>
-            <div className='container'>
-                <div className="content">
-                    <section>
-                        Item
-                    </section>
-                </div>
-            </div>
+            <Container>
+                <Heading>LOGO</Heading>
+            </Container>
+
+            <Container>
+                <Heading>MENU</Heading>
+            </Container>
+
+            <Container>
+                <Heading>CONTENT</Heading>
+            </Container>
         </>
     )
 
