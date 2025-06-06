@@ -1,3 +1,4 @@
+import { TimerIcon } from 'lucide-react';
 import { Heading } from './components/Heading';
 import './styles/global.css';
 import './styles/theme.css';
@@ -9,12 +10,25 @@ function App() {
     }
     teste();
 
-  return (
-    <>
-      <Heading> Olá mundo </Heading>
-      <p>Teste</p>
-    </>
-  )
+    return (
+        <>
+            <Heading>
+                teste
+                <button>
+                    <TimerIcon />
+                </button>
+                <button>
+                    <TimerIcon />
+                </button>
+                <button>
+                    <TimerIcon />
+                </button>
+                <button>
+                    <TimerIcon />
+                </button>
+            </Heading>
+        </>
+    )
 
 }
 
