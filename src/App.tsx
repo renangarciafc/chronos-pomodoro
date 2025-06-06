@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-      <Heading />
+      <Heading> Olá mundo </Heading>
       <p>Teste</p>
     </>
   )
-  
+
 }
 
 export default App
