@@ -1,4 +1,5 @@
 import { Container } from './components/Container/index';
+import { CountDown } from './components/CountDown/CountDown';
 import { Heading } from './components/Heading/index';
 import { Logo } from './components/Logo/index';
 import { Menu } from './components/Menu/index';
@@ -25,7 +26,7 @@ function App() {
             </Container>
 
             <Container>
-                <Heading>CONTENT</Heading>
+                <Heading><CountDown /></Heading>
             </Container>
         </>
     )
