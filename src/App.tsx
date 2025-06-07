@@ -1,5 +1,7 @@
-import { Container } from './components/Container';
-import { Heading } from './components/Heading';
+import { Container } from './components/Container/index';
+import { Heading } from './components/Heading/index';
+import { Logo } from './components/Logo/index';
+import { Menu } from './components/Menu/index';
 import './styles/global.css';
 import './styles/theme.css';
 
@@ -13,11 +15,13 @@ function App() {
     return (
         <>
             <Container>
-                <Heading>LOGO</Heading>
+                <Heading>
+                    <Logo>Chronos</Logo>
+                </Heading>
             </Container>
 
             <Container>
-                <Heading>MENU</Heading>
+                <Heading><Menu/></Heading>
             </Container>
 
             <Container>
