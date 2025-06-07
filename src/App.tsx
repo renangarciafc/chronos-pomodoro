@@ -22,11 +22,39 @@ function App() {
             </Container>
 
             <Container>
-                <Heading><Menu/></Heading>
+                <Menu />
             </Container>
 
             <Container>
-                <Heading><CountDown /></Heading>
+                <CountDown />
+            </Container>
+
+            <Container>
+                <form className='form' action="">
+                    <div className="formRow">
+                        <label htmlFor="task">Task</label>
+                        <input type="text" id="task" />
+                    </div>
+
+                    <div className="formRow">
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+                    <div className="formRow">
+                        <p>
+                            Ciclos
+                        </p>
+                        <p>
+                            0 0 0 0 0
+                        </p>
+                    </div>
+
+                    <div className="formRow">
+                        <button>Enviar</button>
+                    </div>
+                </form>
             </Container>
         </>
     )
