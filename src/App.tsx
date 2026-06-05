@@ -1,19 +1,17 @@
+import { PlayCircleIcon } from 'lucide-react';
 import { Container } from './components/Container/index';
 import { CountDown } from './components/CountDown/index';
+import { Cycles } from './components/Cycles/index';
+import { DefaultButton } from './components/DefaultButton';
 import { Heading } from './components/Heading/index';
 import { Input } from './components/Input/index';
 import { Logo } from './components/Logo/index';
 import { Menu } from './components/Menu/index';
 import './styles/global.css';
 import './styles/theme.css';
+import { Footer } from './components/Footer';
 
 function App() {
-
-    function teste() {
-        console.log('teste');
-    }
-    teste();
-
     return (
         <>
             <Container>
@@ -43,24 +41,17 @@ function App() {
                     </div>
 
                     <div className="formRow">
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
+                        <Cycles />
                     </div>
 
                     <div className="formRow">
-                        <p>
-                            Ciclos
-                        </p>
-                        <p>
-                            0 0 0 0 0
-                        </p>
-                    </div>
-
-                    <div className="formRow">
-                        <button>Enviar</button>
+                        <DefaultButton icon={<PlayCircleIcon />} />
                     </div>
                 </form>
+            </Container>
+
+            <Container>
+                <Footer />
             </Container>
         </>
     )
